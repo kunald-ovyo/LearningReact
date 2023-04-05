@@ -13,3 +13,9 @@
   height: 100px;
   margin: 10px;
 }
+
+.header {
+  color: #110f0f;
+  font-family: ubuntu;
+  font-size: 50px;
+}
