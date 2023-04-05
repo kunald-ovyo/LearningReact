@@ -1,0 +1,15 @@
+.base {
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.box {
+  background-color: rgb(39, 79, 188);
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
