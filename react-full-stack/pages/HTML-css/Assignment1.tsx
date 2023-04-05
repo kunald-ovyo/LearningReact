@@ -4,14 +4,18 @@ import { setInterval } from "timers";
 
 const Assignment1 = () => {
   const [count, setcount] = useState<number>(0);
+  const [showDecrementButton, setShowDecrementButton] =
+    useState<boolean>(false);
   const intervalRef = useRef(undefined);
 
   useEffect(() => {
-    if (count < 10) {
+    if (count < 10 && count >= 1) {
       const timeout = setTimeout(() => {
-        setcount(count + 1);
+        setcount(showDecrementButton ? count - 1 : count + 1);
         clearTimeout(timeout);
       }, 1000);
+    } else {
+      setShowDecrementButton(true);
     }
   }, [count]);
 
@@ -26,6 +30,16 @@ const Assignment1 = () => {
       >
         <h1>Checking</h1>
       </button>
+      {showDecrementButton && (
+        <button
+          className={style.box}
+          onClick={() => {
+            setcount(count - 1);
+          }}
+        >
+          <h1>Decrement</h1>
+        </button>
+      )}
     </div>
   );
 };
