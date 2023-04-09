@@ -9,7 +9,7 @@ const Assignment1 = () => {
   const intervalRef = useRef(undefined);
 
   useEffect(() => {
-    if (count < 10 && count >= 1) {
+    if (count < 10 && count >= 0) {
       const timeout = setTimeout(() => {
         setcount(showDecrementButton ? count - 1 : count + 1);
         clearTimeout(timeout);
