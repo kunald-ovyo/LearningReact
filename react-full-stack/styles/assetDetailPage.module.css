@@ -22,12 +22,12 @@
 }
 
 .textTitle {
-  font-size: 4em;
+  font-size: var(--font1-sizeVW);
   margin-left: 2%;
 }
 
 .textSubtitle {
-  font-size: 1em;
+  font-size: var(--font2-sizeVW);
   margin-left: 2%;
 }
 
@@ -42,4 +42,21 @@
 .buttonContainer {
   display: flex;
   flex-direction: column;
+}
+
+/* max-width: (reversRatio * 100vh) */
+@media all and (max-width: 200vh) {
+  #container {
+    background-color: green;
+  }
+
+  /* .textTitle {
+    font-size: var(--font1-sizeVH);
+    margin-left: 2%;
+  }
+
+  .textSubtitle {
+    font-size: var(--font2-sizeVH);
+    margin-left: 2%;
+  } */
 }
