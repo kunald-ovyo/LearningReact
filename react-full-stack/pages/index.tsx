@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import { useState } from "react";
 import Flexbox from "./HTML-css/flexbox";
 import Assignment1 from "./HTML-css/Assignment1";
+import AssetDetailPage from "./HTML-css/AssetDetailPage";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <Flexbox /> */}
-      <Assignment1 />
+      {/* <Assignment1 /> */}
+      <AssetDetailPage />
     </>
   );
 }

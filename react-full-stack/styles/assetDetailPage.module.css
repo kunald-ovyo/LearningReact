@@ -1,0 +1,45 @@
+.baseAssignment {
+  background-color: aliceblue;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bannerView {
+  width: 100%;
+  height: 55%;
+  background-color: aqua;
+  position: relative;
+}
+
+.playButton {
+  position: relative;
+  z-index: 1;
+  width: 150px;
+  height: 60px;
+  left: 2%;
+  top: 10px;
+  background-color: blue;
+}
+
+.textTitle {
+  font-size: 4em;
+  margin-left: 2%;
+}
+
+.textSubtitle {
+  font-size: 1em;
+  margin-left: 2%;
+}
+
+.bottomView {
+  width: 100%;
+  height: 55%;
+  background-color: rgb(255, 136, 0);
+  position: absolute;
+  bottom: 0px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+}
