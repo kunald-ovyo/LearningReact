@@ -11,11 +11,9 @@ function AssetDetailPage() {
           <button>
             <div className={styles.playButton} />
           </button>
-          <br />
           <button>
             <div className={styles.playButton} />
           </button>
-          <br />
           <button>
             <div className={styles.playButton} />
           </button>

@@ -1,4 +1,5 @@
 .baseAssignment {
+  position: relative;
   background-color: aliceblue;
   width: 100vw;
   height: 100vh;
@@ -14,21 +15,23 @@
 .playButton {
   position: relative;
   z-index: 1;
-  width: 150px;
-  height: 60px;
+  width: var(--play-button-width);
+  height: 30px;
   left: 2%;
-  top: 10px;
+  margin-top: 10px;
   background-color: blue;
 }
 
 .textTitle {
   font-size: var(--font1-sizeVW);
   margin-left: 2%;
+  white-space: nowrap;
 }
 
 .textSubtitle {
   font-size: var(--font2-sizeVW);
   margin-left: 2%;
+  white-space: nowrap;
 }
 
 .bottomView {
@@ -59,4 +62,46 @@
     font-size: var(--font2-sizeVH);
     margin-left: 2%;
   } */
+}
+
+/* max-width: (reversRatio * 100vh) */
+@media (max-height: 667px) {
+  .baseAssignment {
+    position: relative;
+    background-color: aliceblue;
+    width: 100vw;
+    height: 667px;
+  }
+
+  .bannerView {
+    width: 100%;
+    height: 330px;
+    background-color: aqua;
+    position: relative;
+  }
+
+  .bottomView {
+    width: 100%;
+    height: 367px;
+    background-color: rgb(255, 136, 0);
+    position: absolute;
+    bottom: 0px;
+  }
+}
+@media all and (max-height: 200vh) {
+  #container {
+    background-color: green;
+  }
+
+  .textTitle {
+    font-size: 30px;
+    margin-left: 2%;
+    white-space: nowrap;
+  }
+
+  .textSubtitle {
+    font-size: 20px;
+    margin-left: 2%;
+    white-space: nowrap;
+  }
 }
