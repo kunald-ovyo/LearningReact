@@ -64,6 +64,15 @@
   } */
 }
 
+@media (max-width: 400px) {
+  .baseAssignment {
+    position: relative;
+    background-color: aliceblue;
+    width: 400px;
+    height: 667px;
+  }
+}
+
 /* max-width: (reversRatio * 100vh) */
 @media (max-height: 667px) {
   .baseAssignment {
