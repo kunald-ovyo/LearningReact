@@ -5,11 +5,59 @@
   height: 100vh;
 }
 
+.fullPage {
+  position: relative;
+  overflow: scroll;
+}
+
+.theAssetImageBox {
+  margin-left: 10px;
+  width: 300px;
+  height: 140px;
+  background-color: rgb(127, 157, 255);
+}
+
+.dummyView {
+  width: 100%;
+  background-color: blueviolet;
+  height: 1000px;
+  margin-top: 20px;
+}
+
+.assetsHorrizontalList {
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 200px;
+  background-color: brown;
+  position: relative;
+  flex-direction: row;
+  justify-content: baseline;
+}
+
+.assetsHorrizontalListone {
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 200px;
+  background-color: brown;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+
 .bannerView {
   width: 100%;
-  height: 55%;
+  height: 55vh;
   background-color: aqua;
-  position: relative;
+}
+
+.innverContainerView {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .playButton {
@@ -65,6 +113,12 @@
 }
 
 @media (max-width: 400px) {
+  .bannerView {
+    width: 400;
+    height: 280;
+    background-color: aqua;
+    position: relative;
+  }
   .baseAssignment {
     position: relative;
     background-color: aliceblue;
