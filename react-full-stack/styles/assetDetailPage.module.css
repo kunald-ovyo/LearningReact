@@ -11,9 +11,31 @@
 }
 
 .theAssetImageBox {
-  margin-left: 10px;
+  margin-right: 10px;
   width: 300px;
   height: 140px;
+  background-color: rgb(127, 157, 255);
+}
+
+.previewImage {
+  position: absolute;
+  width: 100vw;
+  aspect-ratio: 20 / 9;
+}
+
+.imageBox {
+  overflow-y: hidden;
+  overflow-y: hidden;
+  object-fit: cover;
+  width: 100;
+  height: 75;
+}
+
+.circleImage {
+  border-radius: 8vh;
+  margin-right: 14px;
+  width: 16vh;
+  height: 16vh;
   background-color: rgb(127, 157, 255);
 }
 
@@ -29,7 +51,6 @@
   margin-left: 1%;
   margin-right: 1%;
   height: 200px;
-  background-color: brown;
   position: relative;
   flex-direction: row;
   justify-content: baseline;
@@ -40,7 +61,6 @@
   margin-left: 1%;
   margin-right: 1%;
   height: 200px;
-  background-color: brown;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -50,7 +70,15 @@
 .bannerView {
   width: 100%;
   height: 55vh;
-  background-color: aqua;
+  background-color: rgb(3, 11, 11);
+}
+
+.overlayControls {
+  margin-left: 2%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
 }
 
 .innverContainerView {
@@ -58,6 +86,12 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 .playButton {
@@ -74,6 +108,12 @@
   font-size: var(--font1-sizeVW);
   margin-left: 2%;
   white-space: nowrap;
+  z-index: 10;
+}
+
+.pageDescription {
+  font-size: 3vh;
+  margin: 2%;
 }
 
 .textSubtitle {
