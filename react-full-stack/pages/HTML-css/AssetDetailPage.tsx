@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "@/styles/assetDetailPage.module.css";
 import UsehomeScreenCase from "@/domain/customhooks/HomeScreenUseCase";
 import Banner from "@/CustomComponents/Banner";
+import { TbChristmasTree, TbPlayCard, TbPlayerPlay } from "react-icons/tb";
 
 function AssetDetailPage() {
   const [homeScreenData, getNextPageAssets] = UsehomeScreenCase();
@@ -18,17 +19,24 @@ function AssetDetailPage() {
               alt="MDN Logo"
             />
             <div className={styles.overlayControls}>
-              <h1 className={styles.textTitle}>checking</h1>
-              <h1 className={styles.textSubtitle}> this is subtitle</h1>
+              <h1 className={styles.textTitle}>The shanghai</h1>
+              <h1 className={styles.textSubtitle}> Movie no one knows about</h1>
+              <h1 className={styles.textSubtitle}> Season 2 Episod 3</h1>
               <div className={styles.buttonContainer}>
                 <button>
-                  <div className={styles.playButton} />
+                  <div className={styles.playButton}>
+                    <TbPlayerPlay /> Resume
+                  </div>
                 </button>
                 <button>
-                  <div className={styles.playButton} />
+                  <div className={styles.otherButtons}>
+                    <TbPlayerPlay /> play from beginning
+                  </div>
                 </button>
                 <button>
-                  <div className={styles.playButton} />
+                  <div className={styles.otherButtons}>
+                    <TbPlayerPlay /> Remove from watchlist
+                  </div>
                 </button>
               </div>
             </div>
