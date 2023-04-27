@@ -8,6 +8,8 @@
   --font2-sizeVW: 3vh;
   --font2-sizeVH: calc(var(--ratio) * 6vw);
 
+  --font3-sizeVW: 3vh;
+
   --play-button-width: 150px;
   --play-button-height: 5vh;
 

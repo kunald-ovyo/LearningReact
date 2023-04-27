@@ -10,7 +10,7 @@ type Props = {
 function Banner(props: Props) {
   return (
     <div className={styles.assetsHorrizontalList}>
-      <h1 className={styles.textTitle}>{props.title}</h1>
+      <h1 className={styles.bannerTitle}>{props.title}</h1>
       <div className={styles.assetsHorrizontalListone}>
         <div className={styles.innverContainerView}>
           {props.data.map((item, index) => {
